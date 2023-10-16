@@ -10,7 +10,15 @@ Win+R %localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\ga
 
 * サンプル: https://github.com/microsoft/minecraft-samples/
 
+## MCreator を使った Minecraft Add-on の作り方
 
+https://mcreator.net/
+
+MCreator は Java 版の Mod 作成を GUI で行うツール。最近 Add-on にも対応したらしい。
+
+## Skin の作成
+
+https://minecraft.novaskin.me/
 
 ## ゆっくり音声
 
