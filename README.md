@@ -1,5 +1,17 @@
 # 子供用 PC 雑記帳
 
+## 統合版 add-on の作り方
+
+* 公式サイト: https://www.minecraft.net/ja-jp/creator
+* Minecraft: Bedrock Edition Creator Documentation: https://learn.microsoft.com/en-us/minecraft/creator/
+* Getting Started: https://learn.microsoft.com/en-us/minecraft/creator/documents/gettingstarted
+
+Win+R %localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang
+
+* サンプル: https://github.com/microsoft/minecraft-samples/
+
+
+
 ## ゆっくり音声
 
 * 音源: https://www.a-quest.com/demo/
