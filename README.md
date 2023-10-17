@@ -9,16 +9,16 @@
 Win+R %localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang
 
 * サンプル: https://github.com/microsoft/minecraft-samples/
+* デフォルトのhttps://github.com/Mojang/bedrock-samples
 
-## MCreator を使った Minecraft Add-on の作り方
+## 統合版 Add-on に利用できるツール
 
-https://mcreator.net/
-
-MCreator は Java 版の Mod 作成を GUI で行うツール。最近 Add-on にも対応したらしい。
-
-## Skin の作成
-
-https://minecraft.novaskin.me/
+* MCreator: https://mcreator.net/
+    * MCreator は Java 版の Mod 作成を GUI で行うツール。最近統合版 Add-on にも対応したらしい。
+* Novaskin: https://minecraft.novaskin.me/
+    * Web でスキンの作成ができる。
+* Blockbench: https://www.blockbench.net/
+    * Web 版もある: https://web.blockbench.net/
 
 ## ゆっくり音声
 
