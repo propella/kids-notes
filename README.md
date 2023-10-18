@@ -6,10 +6,17 @@
 * Minecraft: Bedrock Edition Creator Documentation: https://learn.microsoft.com/en-us/minecraft/creator/
 * Getting Started: https://learn.microsoft.com/en-us/minecraft/creator/documents/gettingstarted
 
-Win+R %localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang
+* データディレクトリの場所:
+    * Win+R %localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang
 
 * サンプル: https://github.com/microsoft/minecraft-samples/
 * デフォルトのhttps://github.com/Mojang/bedrock-samples
+
+## Blockbench https://www.blockbench.net/
+
+ローポリ創作ツールとあるが、Minecraft Entity Plugin を使えば簡単に Minecraft Add-on の作成ができる。
+
+https://learn.microsoft.com/en-us/minecraft/creator/documents/minecraftentitywizard
 
 ## 統合版 Add-on に利用できるツール
 
