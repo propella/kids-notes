@@ -18,6 +18,22 @@
 
 https://learn.microsoft.com/en-us/minecraft/creator/documents/minecraftentitywizard
 
+TODO:
+
+* エンティティの再編集
+    * development_resource_packs 内の models/entity/*.get.json ファイルを開ける。
+    * Blockbench は development_resource_packs 内を直接編集するので、即時反映される。
+* Wizard の翻訳
+* Player モデルを編集
+* mcaddon の作成 -> Tools > Entity Wizard で
+* Realms で作成した addon を使う方法
+    * 開発中の addon は development_behavior_packs に入っているが Realms で利用するためには behavior_packs に入れる必要がある。これには二つの方法がある。
+        * 手動で development_behavior_packs を behavior_packs に移動する。
+            * todo: もしかして、いったん behavior_pack を作ったら編集しないのでこれだけで完了?
+        * mcaddon を作成してマイクラに読む。
+            * Tools > Entity Wizard で作り直し、Blockbench 編集中のモデルを選択すれば再度 mcaddon として export できる。
+
+
 ## 統合版 Add-on に利用できるツール
 
 * MCreator: https://mcreator.net/
