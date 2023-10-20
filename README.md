@@ -1,5 +1,16 @@
 # 子供用 PC 雑記帳
 
+## 子供用アカウントの作成
+
+* Microsoft アカウント
+    * Microsoft Family Safety で管理。
+    * マイクラと PC ログイン用に使う。
+    * メールアドレスが出来る。全て削除するようにルールを作成する。
+    * Teams を有効にして情報共有に使う。
+* Google アカウント
+    * Youtube に使う。
+    * Google Drive で親のディレクトリを一つ共有。ファイル共有に使う。
+
 ## 統合版 add-on の作り方
 
 * 公式サイト: https://www.minecraft.net/ja-jp/creator
@@ -14,8 +25,10 @@
 
 ## Blockbench https://www.blockbench.net/
 
-ローポリ創作ツールとあるが、Minecraft Entity Plugin を使えば簡単に Minecraft Add-on の作成ができる。
+Blockbench で Minecraft Entity を扱うための基礎知識
+https://www.blockbench.net/wiki/guides/bedrock-modeling/
 
+ローポリ創作ツールとあるが、Minecraft Entity Plugin を使えば簡単に Minecraft Add-on の作成ができる。
 https://learn.microsoft.com/en-us/minecraft/creator/documents/minecraftentitywizard
 
 TODO:
@@ -23,7 +36,16 @@ TODO:
 * エンティティの再編集
     * development_resource_packs 内の models/entity/*.get.json ファイルを開ける。
     * Blockbench は development_resource_packs 内を直接編集するので、即時反映される。
+* Blockbench の翻訳
+    * github: https://github.com/JannisX11/blockbench
+    * 実行方法
+        * npm run webpack
+        * npm run dev
+    * 翻訳ファイル編集方法
+        * https://github.com/JannisX11/blockbench/blob/master/lang/ja.json を編集。
 * Wizard の翻訳
+    * https://www.blockbench.net/wiki/blockbench/localization
+    * [Blockbench Translation Project](https://poeditor.com/join/project/EFP1ygSsn7)
 * Player モデルを編集
 * mcaddon の作成 -> Tools > Entity Wizard で
 * Realms で作成した addon を使う方法
