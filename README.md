@@ -23,6 +23,14 @@
 * サンプル: https://github.com/microsoft/minecraft-samples/
 * デフォルトのhttps://github.com/Mojang/bedrock-samples
 
+## マイクラ Add-on を共有する際の mcaddon ファイルの作り方
+
+探し方が悪いのか公式の mcaddon の作り方が見つからないのでメモ。以下の方法で作成できる。
+
+* Behavior pack と Resource pack それぞれをあるディレクトリに置く。ディレクトリ名は何でもよいが、英文字にする。例: b/ と r/。日本語を使うと Windows で圧縮した際に文字化けして Minecraft が ZIP フォーマットエラーになる。
+* Behavior pack と Resource pack を選択して右クリック > ZIP ファイルに圧縮する。
+* ファイル名を決定するときに拡張子を .mcaddon にする。
+
 ## Blockbench https://www.blockbench.net/
 
 Blockbench で Minecraft Entity を扱うための基礎知識
