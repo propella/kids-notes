@@ -57,6 +57,17 @@ TODO:
 
 * Player モデル使って Entity を作る方法
     * 目標: 形は魔理沙で動きはハチの Entity。
+    * bedrock-samples 内のモデルで何か作ってみる。-> ender_dragon などは部品が足りない。
+    * File > New > Minecraft Skin で空のスキンを作る。
+        * スキン作成時にダウンロードしたスキン png を指定する。
+    * プロジェクトを bbmodel として保存。
+    * Entity Wizard で適当な Entity を作る。Visual Studio Code を開いておく。
+    * モデルをいったん全部消す。
+    * File > 読み込み > オープンプロジェクトの読み込み。
+    * 先ほど保存したプロジェクトを選択すると、スキンが読み込まれる。
+    * VSCode で textures/entity/ に png がある事を確認。
+    * これをダウンロードしたスキンに置き換える。
+    * todo: 置き換えた後さらに Blockbench で編集する方法。
 * Blockbench の翻訳
     * github: https://github.com/JannisX11/blockbench
     * 実行方法
