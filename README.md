@@ -23,6 +23,20 @@
 * サンプル: https://github.com/microsoft/minecraft-samples/
 * デフォルトのhttps://github.com/Mojang/bedrock-samples
 
+## com.mojang の構造
+
+development_ で始まるディレクトリは内容が即更新されて開発に便利な一方で、world にコピーされないので Realms では使えない。
+development_ で始まらないディレクトリは作成時に minecraftWorld の各 world ディレクトリにコピーされるため、Realms でも使える。
+
+* behavior_packs: インストールされた behavior pack。インストール時のみ更新。
+* resource_packs: インストールされた resource pack。インストール時のみ更新。
+* development_behavior_packs: 開発中の behavior pack。ローカルや Realms の world にはコピーされない。内容即時更新。
+* development_resource_packs: 開発中の resource pack。ローカルや Realms の world にはコピーされない。内容即時更新。
+* minecraftWorlds
+    * (ワールドごとの ID)
+        * behavior_packs: 有効にした behavior pack がコピーされる。(development_behavior_packs にあるものはコピーされない)
+        * resource_packs: 有効にした resource pack がコピーされる。(development_resource_packs にあるものはコピーされない)
+
 ## マイクラ Add-on を共有する際の mcaddon ファイルの作り方
 
 探し方が悪いのか公式の mcaddon の作り方が見つからないのでメモ。以下の方法で作成できる。
@@ -41,9 +55,8 @@ https://learn.microsoft.com/en-us/minecraft/creator/documents/minecraftentitywiz
 
 TODO:
 
-* エンティティの再編集
-    * development_resource_packs 内の models/entity/*.get.json ファイルを開ける。
-    * Blockbench は development_resource_packs 内を直接編集するので、即時反映される。
+* Player モデル使って Entity を作る方法
+    * 目標: 形は魔理沙で動きはハチの Entity。
 * Blockbench の翻訳
     * github: https://github.com/JannisX11/blockbench
     * 実行方法
@@ -54,12 +67,13 @@ TODO:
 * Wizard の翻訳
     * https://www.blockbench.net/wiki/blockbench/localization
     * [Blockbench Translation Project](https://poeditor.com/join/project/EFP1ygSsn7)
-* Player モデルを編集
-* mcaddon の作成 -> Tools > Entity Wizard で
-* Realms で作成した addon を使う方法
+* done: エンティティの再編集
+    * development_resource_packs 内の models/entity/*.get.json ファイルを開ける。
+    * Blockbench は development_resource_packs 内を直接編集するので、即時反映される。
+* done: Realms で作成した addon を使う方法
     * 開発中の addon は development_behavior_packs に入っているが Realms で利用するためには behavior_packs に入れる必要がある。これには二つの方法がある。
-        * 手動で development_behavior_packs を behavior_packs に移動する。
-            * todo: もしかして、いったん behavior_pack を作ったら編集しないのでこれだけで完了?
+        * 手動で development_behavior_packs を behavior_packs に移動する。resource pack は移動する必要なし。
+            * 簡単だが、新しく作ったモデルを既存の behavior_pack に追加できないので難しいかも。
         * mcaddon を作成してマイクラに読む。
             * Tools > Entity Wizard で作り直し、Blockbench 編集中のモデルを選択すれば再度 mcaddon として export できる。
 
