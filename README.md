@@ -55,19 +55,10 @@ https://learn.microsoft.com/en-us/minecraft/creator/documents/minecraftentitywiz
 
 TODO:
 
-* Player モデル使って Entity を作る方法
-    * 目標: 形は魔理沙で動きはハチの Entity。
-    * bedrock-samples 内のモデルで何か作ってみる。-> ender_dragon などは部品が足りない。
-    * File > New > Minecraft Skin で空のスキンを作る。
-        * スキン作成時にダウンロードしたスキン png を指定する。
-    * プロジェクトを bbmodel として保存。
-    * Entity Wizard で適当な Entity を作る。Visual Studio Code を開いておく。
-    * モデルをいったん全部消す。
-    * File > 読み込み > オープンプロジェクトの読み込み。
-    * 先ほど保存したプロジェクトを選択すると、スキンが読み込まれる。
-    * VSCode で textures/entity/ に png がある事を確認。
-    * これをダウンロードしたスキンに置き換える。
-    * todo: 置き換えた後さらに Blockbench で編集する方法。
+* アニメーション
+* Player モデルにマントなどを追加する方法。
+    * 単にボックスを追加するだけでは他のパーツと UV が被ってしまう。
+    * https://www.blockbench.net/wiki/guides/bedrock-modeling/ に Blockbench で Entity を作る方法が書いてある。
 * Blockbench の翻訳
     * github: https://github.com/JannisX11/blockbench
     * 実行方法
@@ -78,6 +69,18 @@ TODO:
 * Wizard の翻訳
     * https://www.blockbench.net/wiki/blockbench/localization
     * [Blockbench Translation Project](https://poeditor.com/join/project/EFP1ygSsn7)
+* done: Player モデル使って Entity を作る方法
+    * 目標: 形は魔理沙で動きはハチの Entity。
+    * bedrock-samples 内のモデルで何か作ってみる。-> ender_dragon などは部品が足りない。
+    * File > New > Minecraft Skin で空のスキンを作る。
+        * スキン作成時にダウンロードしたスキン png を指定する。
+    * Entity Wizard で適当な Entity を作る。Visual Studio Code を開いておく。
+    * モデルをいったん全部消す。
+    * File > 読み込み > オープンプロジェクトの読み込み。
+    * 先ほど作成したスキンのプロジェクトを選択すると、スキンのモデルが読み込まれる。
+    * VSCode で textures/entity/ に png がある事を確認。
+    * これを novaskin などからダウンロードした好きなスキンに置き換える。
+    * 置き換えた後さらに Blockbench で編集できる。
 * done: エンティティの再編集
     * development_resource_packs 内の models/entity/*.get.json ファイルを開ける。
     * Blockbench は development_resource_packs 内を直接編集するので、即時反映される。
