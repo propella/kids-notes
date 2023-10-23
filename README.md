@@ -73,12 +73,21 @@ TODO:
 * Wizard の翻訳
     * https://www.blockbench.net/wiki/blockbench/localization
     * [Blockbench Translation Project](https://poeditor.com/join/project/EFP1ygSsn7)
-* Player モデルを編集
-    * [【統合版minecraft】ブロックベンチ解説【人型モデルを作ります】](https://www.youtube.com/watch?v=iKXuWQyLk_k)
-    * https://www.minecraft.net/ja-jp/creator
-* Blockbench でプレイヤースキンを作成する方法。
-    * 
-* mcaddon の作成 -> Tools > Entity Wizard で
+* done: Player モデル使って Entity を作る方法
+    * 目標: 形は魔理沙で動きはハチの Entity。
+    * bedrock-samples 内のモデルで何か作ってみる。-> ender_dragon などは部品が足りない。
+    * File > New > Minecraft Skin で空のスキンを作る。
+        * スキン作成時にダウンロードしたスキン png を指定する。
+    * Entity Wizard で適当な Entity を作る。Visual Studio Code を開いておく。
+    * モデルをいったん全部消す。
+    * File > 読み込み > オープンプロジェクトの読み込み。
+    * 先ほど作成したスキンのプロジェクトを選択すると、スキンのモデルが読み込まれる。
+    * VSCode で textures/entity/ に png がある事を確認。
+    * これを novaskin などからダウンロードした好きなスキンに置き換える。
+    * 置き換えた後さらに Blockbench で編集できる。
+* done: エンティティの再編集
+    * development_resource_packs 内の models/entity/*.get.json ファイルを開ける。
+    * Blockbench は development_resource_packs 内を直接編集するので、即時反映される。
 * Realms で作成した addon を使う方法
     * 開発中の addon は development_behavior_packs に入っているが Realms で利用するためには behavior_packs に入れる必要がある。これには二つの方法がある。
         * 手動で development_behavior_packs を behavior_packs に移動する。resource pack は移動する必要なし。
