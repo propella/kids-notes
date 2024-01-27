@@ -61,20 +61,25 @@ https://learn.microsoft.com/en-us/minecraft/creator/documents/minecraftentitywiz
 TODO:
 
 * [クラフターズ・コロニー](https://minecraft-mcworld.com/)
-* アニメーション
+* アニメーション (いまここ)
+    * Addon のアニメーション仕様の調査
+        * [Creating New Entity Types | Microsoft Learn](https://learn.microsoft.com/en-us/minecraft/creator/documents/introductiontoaddentity)
+    * Blockbench でのアニメーション作成方法
 * Player モデルにマントなどを追加する方法。
     * 単にボックスを追加するだけでは他のパーツと UV が被ってしまう。
     * https://www.blockbench.net/wiki/guides/bedrock-modeling/ に Blockbench で Entity を作る方法が書いてある。
 * Blockbench の翻訳
     * github: https://github.com/JannisX11/blockbench
     * 実行方法
-        * npm run webpack
+        * npm run bundle
         * npm run dev
-    * 翻訳ファイル編集方法
-        * https://github.com/JannisX11/blockbench/blob/master/lang/ja.json を編集。
+    * Blockbench 本体の翻訳: https://www.blockbench.net/wiki/blockbench/localization
+        * [Blockbench Translation Project](https://poeditor.com/join/project/EFP1ygSsn7)
+        * 翻訳ファイル編集方法
+            * https://github.com/JannisX11/blockbench/blob/master/lang/ja.json を編集。
 * Wizard の翻訳
-    * https://www.blockbench.net/wiki/blockbench/localization
-    * [Blockbench Translation Project](https://poeditor.com/join/project/EFP1ygSsn7)
+    * Plugin: https://github.com/JannisX11/blockbench-plugins
+    * Wizard のビルド済み javascript コードは見つかったが、元のソースは見つからなかった。
 * done: Player モデル使って Entity を作る方法
     * 目標: 形は魔理沙で動きはハチの Entity。
     * bedrock-samples 内のモデルで何か作ってみる。-> ender_dragon などは部品が足りない。
