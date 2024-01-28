@@ -9,6 +9,14 @@
     * Teams を有効にして情報共有に使う。
     * マイクラ権限: プライバシーとオンラインの安心設定でフレンドの追加の許可設定を変更する。
         * https://account.xbox.com/ja-jp/settings
+    * Realms の購入
+        * Family Safety https://account.microsoft.com/family/home に行く
+        * 子供の名前を選択
+        * 支出 を選択
+        * クレジット カード を登録
+        * 購入するたびに承認が必要 を off にする。
+        * Realms を購入する。
+        * 購入するたびに承認が必要 を on に戻す。
 * Google アカウント
     * Youtube に使う。
     * Google Drive で親のディレクトリを一つ共有。ファイル共有に使う。
