@@ -7,9 +7,17 @@
     * マイクラと PC ログイン用に使う。
     * メールアドレスが出来る。全て削除するようにルールを作成する。
     * Teams を有効にして情報共有に使う。
-    * マイクラ権限: プライバシーとオンラインの安心設定でフレンドの追加の許可設定を変更する。
-        * https://account.xbox.com/ja-jp/settings
-    * Realms の購入
+    * ゲームの権限設定
+        * Xbox [プライバシーとオンラインの安心設定](https://account.xbox.com/ja-jp/settings)で設定する:
+    * マイクラで必要な権限
+        * Xbox Series X|S、Xbox One、Windows 10 デバイス オンライン セーフティ
+            * マルチプレイヤー ゲームへの参加
+            * フレンドを追加
+        * Xbox 360 オンラインの安心設定
+            * オンライン ゲーム
+    * AmongUs で必要な権限設定
+        * 
+    * マイクラ Realms や Add On の購入
         * Family Safety https://account.microsoft.com/family/home に行く
         * 子供の名前を選択
         * 支出 を選択
@@ -17,6 +25,7 @@
         * 購入するたびに承認が必要 を off にする。
         * Realms を購入する。
         * 購入するたびに承認が必要 を on に戻す。
+    * Among U
 * Google アカウント
     * Youtube に使う。
     * Google Drive で親のディレクトリを一つ共有。ファイル共有に使う。
