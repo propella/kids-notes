@@ -16,7 +16,19 @@
         * Xbox 360 オンラインの安心設定
             * オンライン ゲーム
     * AmongUs で必要な権限設定
-        * 
+        *  https://answers.microsoft.com/en-us/xbox/forum/all/among-us-on-pc-not-letting-me-play-online/33e01378-c25a-4d1c-9ff8-fd1d1584e5ae
+        * プライバシー
+            * コミュニティの作品を確認してアップロードできます > すべての人
+            * Xbox Live 以外のユーザーが音声やテキストで通信できるようにする > 許可 (ここむずい)
+            * 他のユーザーは音声や文字、招待でコミュニケーションできます > すべての人
+        * Xbox Series X|S、Xbox One、Windows 10 デバイス オンライン セーフティ
+            * Xbox Live 以外のプレイヤーとプレイできます > 許可
+            * クラブの結成と参加ができます > 許可
+            * ゲームのプレイ内容を配信 > 許可
+            * マルチプレイヤー ゲームへの参加 > 許可
+            * フレンドを追加 > 許可
+        * Xbox 360 オンラインの安心設定
+            * オンライン ゲーム
     * マイクラ Realms や Add On の購入
         * Family Safety https://account.microsoft.com/family/home に行く
         * 子供の名前を選択
