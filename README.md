@@ -162,6 +162,17 @@ Windows で mDNS を使う方法
     * Windows セキュリティ > 詳細設定 > 受信の規則 > コアネットワーク - ICMPv4, ICMPv6 受信のプライベート,パブリック > 右クリックで規則の有効化
     * これで `ping マシン名.local` で導通確認が可能。
 
+## CurseForge で起動した Minecraft JAVA 版が遅い時
+
+* 参考 https://rabbitprogram.com/archives/1434
+* Nvidia Control Panel を開く
+* 3D 設定の管理
+* プログラム設定
+* 追加
+* OpenJDK Platform binary を追加する (c:\users\xxx\curseforge\minecraft\install\runtime\java-runtime-gamma 以下にある。)
+* 高パフォーマンス NVIDIA プロセッサを選択
+* 適用してマイクラ再起動
+
 ## Windows で nvim が使えるようになるまで
 
 ## Windows その他設定
