@@ -30,13 +30,13 @@
         * Xbox 360 オンラインの安心設定
             * オンライン ゲーム
     * マイクラ Realms や Add On の購入
-        * Family Safety https://account.microsoft.com/family/home に行く
-        * 子供の名前を選択
-        * 支出 を選択
-        * クレジット カード を登録
-        * 購入するたびに承認が必要 を off にする。
-        * Realms を購入する。
-        * 購入するたびに承認が必要 を on に戻す。
+        * 子供のアカウントで支払いオプション https://account.microsoft.com/billing/payments に行く。
+            * クレジットカードを登録
+        * 大人のアカウントで Family Safety https://account.microsoft.com/family/home に行く
+            * 子供の名前を選択
+            * 購入するたびに承認が必要 を off にする。
+            * 子供のアカウントで Realms を購入する。
+            * 購入するたびに承認が必要 を on に戻す。
     * Among U
 * Google アカウント
     * Youtube に使う。
