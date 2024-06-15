@@ -33,9 +33,9 @@
         * 子供のアカウントで支払いオプション https://account.microsoft.com/billing/payments に行く。
             * クレジットカードを登録
         * 大人のアカウントで Family Safety https://account.microsoft.com/family/home に行く
-            * 子供の名前を選択
-            * 購入するたびに承認が必要 を off にする。
-            * 子供のアカウントで Realms を購入する。
+            * 子供の名前を選択 > 支出 > クレジットカード
+                * 購入するたびに承認が必要 を off にする。
+            * マイクラ内の子供のアカウントで Realms を購入する。
             * 購入するたびに承認が必要 を on に戻す。
     * Among U
 * Google アカウント
