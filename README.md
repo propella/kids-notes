@@ -87,6 +87,8 @@ https://www.blockbench.net/wiki/guides/bedrock-modeling/
 ローポリ創作ツールとあるが、Minecraft Entity Plugin を使えば簡単に Minecraft Add-on の作成ができる。
 https://learn.microsoft.com/en-us/minecraft/creator/documents/minecraftentitywizard
 
+File > Plugins... > Minecraft Entity Wizard などをインストール
+
 TODO:
 
 * [クラフターズ・コロニー](https://minecraft-mcworld.com/)
@@ -130,16 +132,8 @@ TODO:
             * 簡単だが、新しく作ったモデルを既存の behavior_pack に追加できないので難しいかも。
         * mcaddon を作成してマイクラに読む。
             * Tools > Entity Wizard で作り直し、Blockbench 編集中のモデルを選択すれば再度 mcaddon として export できる。
+    * todo: MCreator など、別ツールを使えば mcaddon 化できるかもしれないので調査。
 
-
-## 統合版 Add-on に利用できるツール
-
-* MCreator: https://mcreator.net/
-    * MCreator は Java 版の Mod 作成を GUI で行うツール。最近統合版 Add-on にも対応したらしい。
-* Novaskin: https://minecraft.novaskin.me/
-    * Web でスキンの作成ができる。
-* Blockbench: https://www.blockbench.net/
-    * Web 版もある: https://web.blockbench.net/
 
 ## ゆっくり音声
 
