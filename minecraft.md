@@ -6,8 +6,46 @@
 
 公式ドキュメントの [Creator Learning Journey](https://learn.microsoft.com/en-us/minecraft/creator/documents/learningjourneyguide?view=minecraft-bedrock-stable) を読むと、マイクラ開発初心者が学ぶべき項目が整理されています。これを読みながらアドオン勉強の道筋を考えます。
 
+## Step1 何がどこにあるか確認しよう
 
+[Getting Started With Minecraft Add-Ons | Microsoft Learn](https://learn.microsoft.com/en-us/minecraft/creator/documents/gettingstarted?view=minecraft-bedrock-stable&tabs=Windows10)
 
+基本的なアドオンの知識について書かれてあります。特に大切なのはアドオンにとっての魔法のパス
+
+    %localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang
+
+です。これを Win+R に打ち込むとマイクラのデータディレクトリが開きます。アドオン開発はこの `com.mojang` ディレクトリ内で行います。
+
+### ビヘイビアパックとリソースパック
+
+アドオンはビヘイビアパックとリソースパックの二種類あります。それぞれ役割が違っていて、あるアドオンをインストールするときは典型的にはビヘイビアパックとリソースパックの両方を読みます。
+
+* リソースパック: 見た目を制御する部品です。クライアント側で動作します。
+* ビヘイビアパック: 動きを制御する部品です。サーバ側で動作します。
+
+![Resource pack & Behavior pack](https://learn.microsoft.com/en-us/minecraft/creator/documents/media/addentity/filestructure.png)
+
+参考: [Creating New Entity Types > File structure](https://learn.microsoft.com/en-us/minecraft/creator/documents/introductiontoaddentity?view=minecraft-bedrock-stable#file-structure)
+
+## `com.mojang` の構造
+
+`com.mojang` には以下のようなディレクトリがあります。
+
+* behavior_packs: インストールされたビヘイビアパック。インストール時のみ更新されます。
+* resource_packs: インストールされたリソースパック。インストール時のみ更新されます。
+* development_behavior_packs: 開発中のビヘイビアパック。ローカルや Realms の world にはコピーされない。内容即時更新。
+* development_resource_packs: 開発中のリソースパック。ローカルや Realms の world にはコピーされない。内容即時更新。
+* minecraftWorlds
+    * (ワールドごとの ID)
+        * behavior_packs: 有効にしたビヘイビアパックがコピーされる。(development_behavior_packs にあるものはコピーされない)
+        * resource_packs: 有効にしたリソースパックがコピーされる。(development_resource_packs にあるものはコピーされない)
+
+ここで、development_ で始まるディレクトリが開発ように特別に用意されたアドオン用のディレクトリです。以下の違いがあります。
+
+* development_ で始まるディレクトリは内容が即更新されて開発に便利な一方で、world にコピーされないので Realms では使えない。
+* development_ で始まらないディレクトリは作成時に minecraftWorld の各 world ディレクトリにコピーされるため、Realms でも使える。
+
+前回 Blockbench で作成したアドオンが Realms で使えないと言った理由はここにあります。Blockbench ではアドオンを development_ で始まるディレクトリに作成するので、そのままでは minecraftWorlds にコピーされないので、Realms サーバにもアップロードされません。Realms で使うには .mcaddon ファイルという zip で固めて適切にマイクラにインストールさせる必要があります。
 
 
 * TBD
