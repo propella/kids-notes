@@ -14,7 +14,7 @@
 
     %localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang
 
-です。これを Win+R に打ち込むとマイクラのデータディレクトリが開きます。アドオン開発はこの `com.mojang` ディレクトリ内で行います。
+です。これを Win+R に打ち込むとマイクラのデータディレクトリが開きます。アドオン開発はこの `com.mojang` ディレクトリ内で行います。スタートにピン止め推奨です。
 
 ### ビヘイビアパックとリソースパック
 
@@ -45,10 +45,47 @@
 * development_ で始まるディレクトリは内容が即更新されて開発に便利な一方で、world にコピーされないので Realms では使えない。
 * development_ で始まらないディレクトリは作成時に minecraftWorld の各 world ディレクトリにコピーされるため、Realms でも使える。
 
-前回 Blockbench で作成したアドオンが Realms で使えないと言った理由はここにあります。Blockbench ではアドオンを development_ で始まるディレクトリに作成するので、そのままでは minecraftWorlds にコピーされないので、Realms サーバにもアップロードされません。Realms で使うには .mcaddon ファイルという zip で固めて適切にマイクラにインストールさせる必要があります。
+前回 Blockbench で作成したアドオンが Realms で使えないと言った理由はここにあります。Blockbench ではアドオンを development_ で始まるディレクトリに作成するので、マイクラ内の設定で有効にしても minecraftWorlds にコピーされず、Realms サーバにもアップロードされません。
 
+作成したアドオンを Realms で使うには zip で固めて .mcaddon ファイルを作成し、適切にマイクラにインストールさせる必要があります。
 
-* TBD
+[Comprehensive List of Pack Contents](https://learn.microsoft.com/en-us/minecraft/creator/documents/comprehensivepackcontents)
+
+## Step2 何か作ってみよう
+
+この章では、リソースパックとビヘイビアパックの基礎知識を解説しています。
+
+[An Introduction to Resource Packs](https://learn.microsoft.com/en-us/minecraft/creator/documents/resourcepack?view=minecraft-bedrock-stable)
+
+[An Introduction To Behavior Packs](https://learn.microsoft.com/en-us/minecraft/creator/documents/behaviorpack?view=minecraft-bedrock-stable)
+
+ここでのポイントは以下と思いました。
+
+* リソースパックは既存のマイクラの見た目を変更できる。
+* 既存の見た目を変更するには、[Vanilla resource pack](https://aka.ms/resourcepacktemplate) でファイル名を調べると良い。
+* ビヘイビアパックは既存のマイクラの動きを変更できる。新規のエンティティも作成できる。
+    * ビヘイビアパックからリソースパックへの依存を設定すると、依存するリソースパックを自動インストールできる。
+
+## Step3 もっと複雑なものを作ってみよう
+
+読んでないのでリンクだけコピペ
+
+* [Add a Custom Sounds](https://learn.microsoft.com/en-us/minecraft/creator/documents/addcustomsounds)
+* [Create an Entity](https://learn.microsoft.com/en-us/minecraft/creator/documents/introductiontoaddentity)
+* [Create a Custom Block](https://learn.microsoft.com/en-us/minecraft/creator/documents/addcustomdieblock)
+* [Create a Sushi Block: Advanced Custom Blocks](https://learn.microsoft.com/en-us/minecraft/creator/documents/advancedcustomblocks)
+* [Create a Custom Item](https://learn.microsoft.com/en-us/minecraft/creator/documents/addcustomitems)
+
+## さらに上級編
+
+* [Commonly Used Tools](https://learn.microsoft.com/en-us/minecraft/creator/documents/commonlyusedtools?view=minecraft-bedrock-stable)
+* [Animate a Block Texture](https://learn.microsoft.com/en-us/minecraft/creator/documents/createanimatedblocktexture?view=minecraft-bedrock-stable)
+* [Create a Goblin Chef Entity](https://learn.microsoft.com/en-us/minecraft/creator/documents/makerseriesmakingthegoblinchef?view=minecraft-bedrock-stable)
+* [Create a Loot Table](https://learn.microsoft.com/en-us/minecraft/creator/documents/createloottable?view=minecraft-bedrock-stable)
+* [Create a Village with Structure Blocks](https://learn.microsoft.com/en-us/minecraft/creator/documents/structureblockstutorial?view=minecraft-bedrock-stable)
+* [Non-Player Character (NPC) Dialogue](https://learn.microsoft.com/en-us/minecraft/creator/documents/npcdialogue?view=minecraft-bedrock-stable)
+
+とまあこの線に沿って勉強していきます。ただ、飽きてきたので [MCreator](https://mcreator.net/) を調べよっかな。
 
 ---
 
@@ -86,6 +123,8 @@
     * Web でスキンの作成ができる。
 * [SNOWSTORM](https://snowstorm.app/)
     * パーティクルを作成するツール
+* [Mine-imator](https://www.mineimator.com/)
+    * アドオン開発とは関係ないですが、マイクラっぽいアニメを作るツールらしい。
 
 ## 勉強の流れ
 
@@ -103,3 +142,4 @@
 
 記事が増えるたびにここに追記する予定です。
 
+* [マインクラフト2: Creator Learning Journey を眺める。](https://propella.hatenablog.com/entry/2024/07/08/222335)
