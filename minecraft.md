@@ -1,5 +1,39 @@
 # マインクラフトの勉強
 
+# [minecraft]マインクラフト3: 教育版マインクラフトの個人購入
+
+妻が [第6回Minecraftカップ](https://minecraftcup.com/) に興味を持ったので調べています。この Minecraft というのに参加するには、JAVA 版でも統合版でもないもう一つの [教育版 Minecraft](https://education.minecraft.net/ja-jp) というのを使わなくてはいけないらしい。教育用 Minecraft については以前少し調べた事があるのだがアカウントの作り方がわからず挫折していたので再び調べました。
+
+非常に分かりにくいのでポイントを整理します。
+
+* 教育版マインクラフトを利用するには教育版のライセンスが必要
+    * 学校の Office 365 ライセンスを使える人は学校に頼む(?)
+    * うちみたいに学校関係ない人は一人二千円弱/年で「キャンプやクラブ、その他組織で使用するための個別ライセンス」を買える。
+* 案内に沿って個別ライセンスを申し込むと、
+    * ユーザ名@組織名.onmicrosoft.com というユーザ名をもらえる。
+    * Microsoft 365 管理アカウントに一人分教育版マインクラフトライセンスが付いた状態になる。
+
+実際の作業は [Motoko's Blog: 教育版マインクラフトを個人購入してみました](https://www.maisusu.com/blog/purchase-mincraft-education-license) の通りに作業すると大丈夫でした。一応以下に手順を書きます。
+
+* [ライセンス | Minecraft Education](https://education.minecraft.net/ja-jp/licensing)
+    * キャンプ、クラブおよび組織 [直接購入](https://aka.ms/MEEBuyCommercial) を押す
+* [Purchase Commercial Licenses – Minecraft Education](https://aka.ms/MEEBuyCommercial)
+    * Enter your email on [the Minecraft Education commercial purchase page](https://aka.ms/MCEDUCommercialPurchase) のリンクに進む。
+    * 自分のメールアドレスを入れる。
+    * 名前や電話番号などを入れる。
+    * Company name は適当に入れる。
+    * クレジットカードを入れる。
+    * 1,967円でした。
+
+ここまで調べるのに本家含めて色々参考にしましたが、上記 Motoko's Blog さんの記事以外は難しかったので省略します。
+
+さて、実際に使ってみての感想ですが、どうも同じ発行元(ドメイン?)のユーザ同士でしかマルチプレイできない縛りがあるらしく、うちみたいな不登校の子供たちが一緒に遊んだり学ぶには適切でないという事がわかりました。不登校の親がそれぞれ子供に教育用マインクラフトのライセンスを購入してみんなで Minecraft カップに出そうみたいなのを考えていたのですが、同じ組織に属してないと一緒に遊べないとなると無理です。。。残念。
+
+次回用メモ
+
+* [コードビルダーの始め方と簡単な操作方法](https://mc.akihamitsuki.net/usage-code-connection/)
+* [MCreator](https://mcreator.net/)
+
 ---
 
 # [minecraft]マインクラフト2: Creator Learning Journey を眺める。
