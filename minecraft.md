@@ -12,38 +12,38 @@ Preference > Interface Language: Japanese を選択すると日本語になり�
 
 ＋ 新規ワークスペース を選択
 
-<img src="img/mcreator-launch.png" width="400">
+<img src="https://raw.githubusercontent.com/propella/kids-notes/main/img/mcreator-launch.png" width="400">
 
 ワークスペースのタイプで Minecraft データパックを選択。
 
 * アドオンの表示名: なんでも良いみたい。
 * アドオンID: 英数字。フォルダ名などになる。
 
-<img src="img/mcreator-new.png" width="400">
+<img src="https://raw.githubusercontent.com/propella/kids-notes/main/img/mcreator-new.png" width="400">
 
 ＋ (追加ボタン) > ブロックを選択
 
-<img src="img/mcreator-add-block.png" width="400">
+<img src="https://raw.githubusercontent.com/propella/kids-notes/main/img/mcreator-add-block.png" width="400">
 
 ブロックの名前を入力
 
-<img src="img/mcreator-add-block-name.png" width="400">
+<img src="https://raw.githubusercontent.com/propella/kids-notes/main/img/mcreator-add-block-name.png" width="400">
 
 ブロックのテクスチャのどこかを選択する。
 
-<img src="img/mcreator-appearance.png" width="400">
+<img src="https://raw.githubusercontent.com/propella/kids-notes/main/img/mcreator-appearance.png" width="400">
 
 テクスチャを作成
 
-<img src="img/mcreator-texture-create.png" width="400">
+<img src="https://raw.githubusercontent.com/propella/kids-notes/main/img/mcreator-texture-create.png" width="400">
 
 適当にテクスチャを作って「このテクスチャを保存」を選択し、名前を付けます。
 
-<img src="img/mcreator-texture-save.png" width="400">
+<img src="https://raw.githubusercontent.com/propella/kids-notes/main/img/mcreator-texture-save.png" width="400">
 
 ブロックのそれぞれの面に作ったテクスチャをあてはめます。
 
-<img src="img/mcreator-texture-assign.png" width="400">
+<img src="https://raw.githubusercontent.com/propella/kids-notes/main/img/mcreator-texture-assign.png" width="400">
 
 あとは特に難しい部分は無いと思います。画面下のタブ(?)をバウンディングボックス、プロパティと順に選択して好きに設定します。Not supported と出てる奴はまだ対応していない項目です。案外設定できる項目が少ないので迷わないです。
 
@@ -55,13 +55,13 @@ Preference > Interface Language: Japanese を選択すると日本語になり�
 * 鉱石グループ内の平均鉱石数: 32 以下の適当な数
 * 生成される高度: 好きな高度の範囲
 
-<img src="img/mcreator-block-generate.png" width="400">
+<img src="https://raw.githubusercontent.com/propella/kids-notes/main/img/mcreator-block-generate.png" width="400">
 
 最後に、「Mod 要素を保存」すると完了です。
 
 次に実際にゲームで試してみます。「ビルドと実行 > クライアントを実行」でアドオンがマイクラにインストールされるので、適当にワールドを作ってアドオンを追加します。
 
-<img src="img/mcreator-block-world.png" width="400">
+<img src="https://raw.githubusercontent.com/propella/kids-notes/main/img/mcreator-block-world.png" width="400">
 
 happy ブロックが生成されています。キモイですね。。。
 
@@ -74,7 +74,7 @@ happy ブロックが生成されています。キモイですね。。。
 * マイクラの設定 > ストレージ > リソースパック: 開発中のアドオンを削除
 * マイクラの設定 > ストレージ > ビヘイビアーパック: 開発中のアドオンを削除
 
-<img src="img/mcreator-delete.png" width="400">
+<img src="https://raw.githubusercontent.com/propella/kids-notes/main/img/mcreator-delete.png" width="400">
 
 アドオンを削除しても、MCreator のプロジェクトディレクトリには残っているので大丈夫です。ここで、作成した mcaddon ファイルをマイクラで開くと先ほど作成したアドオンがインストールされます。
 
