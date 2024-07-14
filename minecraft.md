@@ -1,5 +1,110 @@
 # マインクラフトの勉強
 
+# [minecraft]マインクラフト4: MCreator
+
+この勉強の目的は小学生がマインクラフトのアドオンを作るれるようにする事です。小学生に Visual Studio Code を使ってのアドオン開発はきついので、サードパーティのツールを検討しています。これまで [Blockbench](https://www.blockbench.net/) を使うとそれなりにモブやアイテムを作成できる事が分かったのですが、制限がキツイので他に探して [MCreator](https://mcreator.net/) を見つけました。MCreator は JAVA 版の Mod を作るのが主目的のツールで統合版のアドオンはまだ発展途上ですが、BlockBench に無い mcaddon ファイルのエキスポート機能に対応しているので期待しています。
+
+今日は簡単なブロックを独自に作って mcaddon ファイルを作るまでの流れを試します。
+
+[Download MCreator](https://mcreator.net/download) から EXE Installer を選択してインストール。
+
+Preference > Interface Language: Japanese を選択すると日本語になります。
+
+＋ 新規ワークスペース を選択
+
+<img src="img/mcreator-launch.png" width="400">
+
+ワークスペースのタイプで Minecraft データパックを選択。
+
+* アドオンの表示名: なんでも良いみたい。
+* アドオンID: 英数字。フォルダ名などになる。
+
+<img src="img/mcreator-new.png" width="400">
+
+＋ (追加ボタン) > ブロックを選択
+
+<img src="img/mcreator-add-block.png" width="400">
+
+ブロックの名前を入力
+
+<img src="img/mcreator-add-block-name.png" width="400">
+
+ブロックのテクスチャのどこかを選択する。
+
+<img src="img/mcreator-appearance.png" width="400">
+
+テクスチャを作成
+
+<img src="img/mcreator-texture-create.png" width="400">
+
+適当にテクスチャを作って「このテクスチャを保存」を選択し、名前を付けます。
+
+<img src="img/mcreator-texture-save.png" width="400">
+
+ブロックのそれぞれの面に作ったテクスチャをあてはめます。
+
+<img src="img/mcreator-texture-assign.png" width="400">
+
+あとは特に難しい部分は無いと思います。画面下のタブ(?)をバウンディングボックス、プロパティと順に選択して好きに設定します。Not supported と出てる奴はまだ対応していない項目です。案外設定できる項目が少ないので迷わないです。
+
+この中で「生成 > このブロックを置き換え可能なブロック」は面白い設定です。例えば以下のようにするとワールドを生成するときに草ブロックの所に作成したブロックが生成されます。
+
+* チェックして有効にする: チェック
+* このブロックを置き換え可能なブロック: ＋ を押して grass を追加
+* チャンク当たりの鉱石グループの平均量: 32 以下の適当な数
+* 鉱石グループ内の平均鉱石数: 32 以下の適当な数
+* 生成される高度: 好きな高度の範囲
+
+<img src="img/mcreator-block-generate.png" width="400">
+
+最後に、「Mod 要素を保存」すると完了です。
+
+次に実際にゲームで試してみます。「ビルドと実行 > クライアントを実行」でアドオンがマイクラにインストールされるので、適当にワールドを作ってアドオンを追加します。
+
+<img src="img/mcreator-block-world.png" width="400">
+
+happy ブロックが生成されています。キモイですね。。。
+
+さて、いよいよ mcaddon ファイルの作成です。
+
+ワークスペース > Mod を配布用にエキスポート > 寄付をせずに Mod をエクスポートするを選択し適当にディレクトリを選ぶと mcaddon ファイルができます。
+
+さて、実は作成した mcaddon ファイルをこのままではマイクラに読み込めません。先ほどテストした開発中のアドオンと UUID が被るからです。mcaddon をテストするには、MCreator がテスト用にインストールしたアドオンを削除します。
+
+* マイクラの設定 > ストレージ > リソースパック: 開発中のアドオンを削除
+* マイクラの設定 > ストレージ > ビヘイビアーパック: 開発中のアドオンを削除
+
+<img src="img/mcreator-delete.png" width="400">
+
+アドオンを削除しても、MCreator のプロジェクトディレクトリには残っているので大丈夫です。ここで、作成した mcaddon ファイルをマイクラで開くと先ほど作成したアドオンがインストールされます。
+
+開発したアドオンと mcaddon からインストールしたアドオンには以下の違いがあります。
+
+* 開発中のアドオン
+    * com.mojang 内の development_behavior_packs と development_resource_packs にインストールされる。
+    * 普通のマルチプレイでは使えるが、Realms で使えない。
+    * 変更が即反映される。
+* mcaddon からインストールしたアドオン
+    * com.mojang 内の behavior_packs と resource_packs にインストールされる。
+    * 普通のマルチプレイでも realms でも使える。
+    * 変更は反映されない(多分 mcaddon からの再インストール必要)
+
+今回は MCreator をご紹介しました。MCreator では BlockBench と同様メニューを使ってアドオンの開発ができます。さらに MCreator では mcaddon へのエキスポート機能が用意されているためより実用的です。
+
+参考
+
+* [How To Make a Minecraft Bedrock Editon Mod 2022 - YouTube](https://www.youtube.com/watch?v=xJX5aGdzvAQ)
+
+今後の予定
+
+* MCreator でエンティティを作成する。
+    * もしかして、複雑なモデルには BlockBech を使ったほうが良いかもしれない。
+    * モデル、スキン、アニメーションについて詳しくなる必要がある。
+* MCreator でパーティクルを作成する。
+    * * [SNOWSTORM](https://snowstorm.app/) で作った json を取り込む。
+
+---
+
 # [minecraft]マインクラフト3: 教育版マインクラフトの個人購入
 
 妻が [第6回Minecraftカップ](https://minecraftcup.com/) に興味を持ったので調べています。この Minecraft というのに参加するには、JAVA 版でも統合版でもないもう一つの [教育版 Minecraft](https://education.minecraft.net/ja-jp) というのを使わなくてはいけないらしい。教育用 Minecraft については以前少し調べた事があるのだがアカウントの作り方がわからず挫折していたので再び調べました。
@@ -24,6 +129,8 @@
     * Company name は適当に入れる。
     * クレジットカードを入れる。
     * 1,967円でした。
+* 一旦アカウントを作成したら [Microsoft 356 管理センター](https://admin.microsoft.com/) で他のユーザの追加ができる。
+    * マインクラフトのサイトの作りが酷くて迷子になるので注意してください。
 
 ここまで調べるのに本家含めて色々参考にしましたが、上記 Motoko's Blog さんの記事以外は難しかったので省略します。
 
@@ -32,6 +139,7 @@
 次回用メモ
 
 * [コードビルダーの始め方と簡単な操作方法](https://mc.akihamitsuki.net/usage-code-connection/)
+    * 残念ながら、ここで触れられている [Code Connection for Minecraft は 2023 年で終了していました](https://minecraft.makecode.com/setup/minecraft-windows10)。
 * [MCreator](https://mcreator.net/)
 
 ---
