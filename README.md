@@ -181,3 +181,10 @@ https://www.minecraft.net/ja-jp/download/server
 やり直す
 
     rm -r *.json logs versions eula.txt libraries server.properties world
+
+## Roblox Studio
+
+自作ワールドを公開する条件
+
+* ゲームの環境設定 > プライバシー: 公開
+* Roblox に公開
