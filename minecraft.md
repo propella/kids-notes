@@ -1,5 +1,15 @@
 # マインクラフトの勉強
 
+# [minecraft]マインクラフト5: ワールドの配布 mcworld の作り方
+
+<img src="https://raw.githubusercontent.com/propella/kids-notes/main/img/mcworld.png" width="400">
+
+* ワールドを作成する
+* ワールドの編集(鉛筆)ボタンを押す
+* 設定を編集 > ゲーム の下のほうに「世界を編集」ボタンがあるので押す。
+
+単純だけど、検索すると、`com.mojang\minecraftWorlds` フォルダ内のディレクトリを zip するという間違った答えが返ってきたので一応書いた。
+
 # [minecraft]マインクラフト4: MCreator
 
 この勉強の目的は小学生がマインクラフトのアドオンを作るれるようにする事です。小学生に Visual Studio Code を使ってのアドオン開発はきついので、サードパーティのツールを検討しています。これまで [Blockbench](https://www.blockbench.net/) を使うとそれなりにモブやアイテムを作成できる事が分かったのですが、制限がキツイので他に探して [MCreator](https://mcreator.net/) を見つけました。MCreator は JAVA 版の Mod を作るのが主目的のツールで統合版のアドオンはまだ発展途上ですが、BlockBench に無い mcaddon ファイルのエキスポート機能に対応しているので期待しています。
